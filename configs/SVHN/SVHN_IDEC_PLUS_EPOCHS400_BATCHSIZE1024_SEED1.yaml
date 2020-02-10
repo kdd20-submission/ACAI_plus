@@ -1,0 +1,19 @@
+DIRS:
+  DATA: ""
+  OUTPUT: ""
+MODEL:
+  ARCH: "IDEC"
+  ADVERSARY: True
+  ADDED_CONSTR: True
+  MODE: "train"
+  DEPTH: 64
+  IDEC:
+    PRETRAIN: 300
+DATA:
+  DATASET: "svhn"
+  BATCH_SIZE: 1024
+  COLORS: 3
+SOLVER:
+  SEED: 1
+CLUSTER:
+  N_RUNS: 1000

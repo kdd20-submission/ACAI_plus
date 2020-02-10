@@ -1,0 +1,19 @@
+DIRS:
+  DATA: ""
+  OUTPUT: ""
+MODEL:
+  ARCH: "IDEC"
+  ADVERSARY: False
+  ADDED_CONSTR: False
+  MODE: "train"
+  DEPTH: 64
+  IDEC:
+    PRETRAIN: 300
+DATA:
+  DATASET: "cifar"
+  BATCH_SIZE: 512
+  COLORS: 3
+SOLVER:
+  SEED: 1
+CLUSTER:
+  N_RUNS: 1000

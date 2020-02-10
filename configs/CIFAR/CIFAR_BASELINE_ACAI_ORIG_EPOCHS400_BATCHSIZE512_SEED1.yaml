@@ -1,0 +1,17 @@
+DIRS:
+  DATA: ""
+  OUTPUT: ""
+MODEL:
+  ARCH: "Baseline"
+  ADVERSARY: True
+  ADDED_CONSTR: False
+  MODE: "train"
+  DEPTH: 64
+DATA:
+  DATASET: "cifar"
+  BATCH_SIZE: 512
+  COLORS: 3
+SOLVER:
+  SEED: 1
+CLUSTER:
+  N_RUNS: 1000
